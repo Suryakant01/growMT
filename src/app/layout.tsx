@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jennifer Hahm Ph.D. Psychological Services, PLLC",
+  title: "Serena Blake Ph.D. Psychological Services, PLLC",
   description: "Cloned with Next.js and Tailwind CSS",
 };
 

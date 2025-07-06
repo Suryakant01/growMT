@@ -4,8 +4,8 @@ const aboutData = {
   imageUrl:
     'https://quilted-libra-91f.notion.site/image/attachment%3Afcdeffc3-7fce-4ca7-a4ea-a0888f182399%3Aimage.png?table=block&id=21f4db5d-d615-8076-8a1c-fd184ea4e5df&spaceId=e434db5d-d615-814a-b090-0003034cd63a&width=2000&userId=&cache=v2',
   imageAlt:
-    'A portrait of Dr. Jennifer Hahm, a woman with dark shoulder-length hair, smiling warmly. She is wearing a dark blue sweater and is standing in front of a white arched background.',
-  title: 'About Dr. Jennifer Hahm',
+    'A portrait of Dr. Serena Blake, a woman with dark shoulder-length hair, smiling warmly. She is wearing a dark blue sweater and is standing in front of a white arched background.',
+  title: 'About Dr. Serena Blake',
   paragraphs: [
     'Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with eight years of experience and over 500 client sessions. She blends evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with compassionate, personalized care to help you overcome anxiety, strengthen relationships, and heal from trauma. Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake is committed to creating a safe, supportive space for you to thrive.',
     "My therapeutic approach is primarily psychodynamic and humanistic, enriched by influences from positive psychology, existentialism, family systems theory, acceptance and commitment concepts, and mindfulness practices.",

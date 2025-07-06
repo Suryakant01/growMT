@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                 <div className="w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center">
                   <Image
                     src="/stressblacksvg.svg"
-                    alt="Jennifer Hahm Logo"
+                    alt="Serena Blake Logo"
                     width={40}
                     height={40}
                     className="text-gray-700"
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
                 {/* Title */}
                 <div className="flex flex-col">
                   <h1 className="text-lg lg:text-xl  text-gray-800 leading-tight font-serif">
-                    Jennifer Hahm, Ph.D.
+                    Serena Blake, Ph.D.
                   </h1>
                   <p className="text-sm lg:text-base text-gray-600 leading-tight">
                     Psychological Services

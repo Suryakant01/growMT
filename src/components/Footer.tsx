@@ -18,12 +18,12 @@ const Footer: React.FC = () => {
             
             {/* Column 1: Brand & Contact Info */}
             <div className="md:col-span-1">
-              <h3 className="text-3xl font-serif text-[#2A4B40]">Dr. Jennifer Hahm, Ph.D.</h3>
+              <h3 className="text-3xl font-serif text-[#2A4B40]">Dr. Serena Blake, Ph.D.</h3>
               <p className="mt-1 text-gray-600">Licensed Psychologist</p>
               <address className="mt-6 text-gray-600 not-italic space-y-2">
-                <p><strong>Phone:</strong> (555) 123-4567</p>
-                <p><strong>Email:</strong> contact@drhahm.com</p>
-                <p><strong>Location:</strong> Serving Michigan & Illinois (Virtual)</p>
+                <p><strong>Phone:</strong> (323) 555-0192</p>
+                <p><strong>Email:</strong> serena@blakepsychology.com</p>
+                <p><strong>Location:</strong> 1287 Maplewood Drive, Los Angeles, CA 90026 </p>
               </address>
             </div>
             
