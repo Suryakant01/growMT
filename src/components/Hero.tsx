@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         playsInline
         poster="/path-to-poster-image.jpg"
       >
-        <source src="/vid.mp4" type="video/mp4" />
+        <source src="https://firebasestorage.googleapis.com/v0/b/safarnama-c075f.appspot.com/o/Assets%2Fvid.mp4?alt=media&token=7b50a0fa-cd2e-4fab-90ee-c2dea6c5205a" type="video/mp4" />
         <source src="/path-to-your-video.webm" type="video/webm" />
         {/* Fallback for browsers that don't support video */}
         <div 
