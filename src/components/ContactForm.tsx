@@ -105,11 +105,20 @@ const ContactForm: React.FC = () => {
         name: "", email: "", phone: "", message: "", preferredTime: "", agree: false,
     });
     const [captchaChecked, setCaptchaChecked] = useState(false);
-    const [errors, setErrors] = useState<Partial<typeof formData>>({});
+    type ContactFormErrors = {
+        name?: string;
+        email?: string;
+        phone?: string;
+        message?: string;
+        preferredTime?: string;
+        agree?: string;
+        captcha?: string;
+    };
+    const [errors, setErrors] = useState<ContactFormErrors>({});
     const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
 
-    const validate = (): Partial<typeof formData> => {
-        const newErrors: Partial<typeof formData> = {};
+    const validate = (): ContactFormErrors => {
+        const newErrors: ContactFormErrors = {};
         if (!formData.name) newErrors.name = "Name is required.";
         if (!formData.email) {
             newErrors.email = "Email is required.";
@@ -118,9 +127,8 @@ const ContactForm: React.FC = () => {
         }
         if (!formData.phone) newErrors.phone = "Phone number is required.";
         if (!formData.message) newErrors.message = "Please let us know what brings you here.";
-        if (!formData.preferredTime) newErrors.preferredTime = "Please provide a preferred contact time.";
-        if (!formData.agree) newErrors.agree = "You must agree to be contacted." as any;
-        if (!captchaChecked) newErrors.agree = "Please verify you are not a robot." as any; // Re-using agree error field for simplicity
+        if (!formData.agree) newErrors.agree = "You must agree to be contacted.";
+        if (!captchaChecked) newErrors.captcha = "Please verify you are not a robot.";
         
         return newErrors;
     };
@@ -178,14 +186,14 @@ const ContactForm: React.FC = () => {
                         <FormTextArea label="What brings you here?" id="message" name="message" value={formData.message} onChange={handleChange} placeholder="How can I help you?" error={errors.message} required />
                         <div>
                             <FormInput label="Preferred time to reach you" id="preferredTime" name="preferredTime" type="text" value={formData.preferredTime} onChange={handleChange} placeholder="e.g., Mornings, Afternoons, Evenings" error={errors.preferredTime} required />
-                            <p className="text-xs text-gray-500 mt-1">Let us know when you're typically available for a call or consultation.</p>
+                            <p className="text-xs text-gray-500 mt-1">Let us know when you&#39;re typically available for a call or consultation.</p>
                         </div>
 
                         <div className="flex items-start">
                             <input id="agree" name="agree" type="checkbox" checked={formData.agree} onChange={handleChange} className="h-4 w-4 text-[#2A4B40] focus:ring-[#2A4B40]/50 border-gray-300 rounded mt-1" />
                             <div className="ml-3 text-sm">
                                 <label htmlFor="agree" className="font-medium text-gray-700">I agree to be contacted via text and email.</label>
-                                {errors.agree && <p className="text-red-600">{errors.agree as string}</p>}
+                                {errors.agree && <p className="text-red-600">{errors.agree}</p>}
                             </div>
                         </div>
 
@@ -194,7 +202,7 @@ const ContactForm: React.FC = () => {
                                 <div onClick={() => setCaptchaChecked((prev) => !prev)} className={`w-6 h-6 border-2 rounded-sm flex-shrink-0 cursor-pointer flex items-center justify-center transition ${captchaChecked ? "bg-[#2A4B40] border-[#2A4B40]" : "border-gray-400 bg-white"}`}>
                                     {captchaChecked && <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>}
                                 </div>
-                                <span className="ml-3 text-gray-700">I'm not a robot</span>
+                                {errors.captcha && <p className="ml-3 text-red-600">{errors.captcha}</p>}
                             </div>
                             <div className="text-center">
                                 <svg className="h-8 w-8 mx-auto text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H5v-2H3v-2H1v-4a6 6 0 016-6h4a2 2 0 012-2h2a2 2 0 012 2v2z"></path></svg>
