@@ -39,7 +39,7 @@ const AreasOfFocus: React.FC = () => {
     <section className="bg-[#F5F4F0] font-serif">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
         <h2 className="text-4xl text-center text-stone-800 mb-16 lg:mb-20">
-          Areas of Focus
+          Services
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 md:gap-x-10 lg:gap-x-16">
