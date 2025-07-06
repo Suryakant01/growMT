@@ -182,7 +182,7 @@ const ContactForm: React.FC = () => {
                     <form onSubmit={handleSubmit} noValidate className="space-y-6 font-serif">
                         <FormInput label="Name" id="name" name="name" type="text" value={formData.name} onChange={handleChange} placeholder="Name" error={errors.name} required />
                         <FormInput label="Email" id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="you@example.com" error={errors.email} required />
-                        <FormInput label="Phone" id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(555) 234-5678" error={errors.phone} required />
+                        <FormInput label="Phone" id="phone" name="phone" type="number" value={formData.phone} onChange={handleChange} placeholder="(555) 234-5678" error={errors.phone} required />
                         <FormTextArea label="What brings you here?" id="message" name="message" value={formData.message} onChange={handleChange} placeholder="How can I help you?" error={errors.message} required />
                         <div>
                             <FormInput label="Preferred time to reach you" id="preferredTime" name="preferredTime" type="text" value={formData.preferredTime} onChange={handleChange} placeholder="e.g., Mornings, Afternoons, Evenings" error={errors.preferredTime} required />
@@ -202,6 +202,7 @@ const ContactForm: React.FC = () => {
                                 <div onClick={() => setCaptchaChecked((prev) => !prev)} className={`w-6 h-6 border-2 rounded-sm flex-shrink-0 cursor-pointer flex items-center justify-center transition ${captchaChecked ? "bg-[#2A4B40] border-[#2A4B40]" : "border-gray-400 bg-white"}`}>
                                     {captchaChecked && <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>}
                                 </div>
+                                <span className="ml-3 text-gray-700 text-sm font-serif">I am not a robot</span>
                                 {errors.captcha && <p className="ml-3 text-red-600">{errors.captcha}</p>}
                             </div>
                             <div className="text-center">
