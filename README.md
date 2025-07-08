@@ -1,77 +1,92 @@
-# Dr. Serena Blake - Psychology Services Website
+Of course! Here is a new `README.md` tailored to your request, highlighting the website's sections, providing slots for screenshots, and showcasing the tech stack used.
 
-This is a professional, responsive website for Dr. Serena Blake, Ph.D., a licensed clinical psychologist. The site is designed to provide information about her services, areas of focus, and an easy way for potential clients to get in touch.
+---
 
-The project is built using modern web technologies, including Next.js 15, React 19, and styled with Tailwind CSS v4.
+# Dr. Serena Blake - Professional Psychology Website
 
-## Key Features
+This repository contains the source code for a modern, responsive, and professional website for Dr. Serena Blake, Ph.D. The site is designed to provide clients with essential information about her psychological services, areas of expertise, and a straightforward way to schedule a consultation.
 
--   **Dynamic Hero Section:** An engaging hero section with a background video to welcome visitors.
--   **Component-Based Architecture:** The site is built with modular and reusable React components, making it clean and maintainable.
--   **Responsive & Modern UI:** Styled with Tailwind CSS v4 for a polished look that works seamlessly across all devices, from desktops to mobile phones.
--   **Interactive FAQ:** A user-friendly, client-side accordion for frequently asked questions.
--   **Client-Side Contact Form:** A secure contact form with input validation and a success modal to confirm submission.
--   **SEO Optimized:** Built with Next.js (App Router) to ensure excellent performance and search engine visibility.
+<br>
 
-## Tech Stack
+## ✨ Visual Showcase
 
--   **Framework:** [Next.js](https://nextjs.org/) 15
--   **UI Library:** [React](https://react.dev/) 19
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/) v4
--   **Language:** [TypeScript](https://www.typescriptlang.org/)
--   **Linting:** [ESLint](https://eslint.org/) 9
--   **Font:** [Geist](https://vercel.com/font) via `next/font`
+Here is a preview of the website's design across different screen sizes.
 
-## Project Structure
+| Desktop View                                                                   | Mobile View                                                                 |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| _(Replace this text with a description of your desktop screenshot)_           | _(Replace this text with a description of your mobile screenshot)_         |
+| ![Desktop Screenshot](https://via.placeholder.com/800x500.png?text=Desktop+View) | ![Mobile Screenshot](https://via.placeholder.com/250x500.png?text=Mobile+View) |
 
-The project follows a standard Next.js App Router structure:
+**To add your own images:**
+1. Take screenshots of your running application.
+2. Add the images to the `public` directory (e.g., `public/desktop-view.png`).
+3. Replace the placeholder URLs above with your local image paths (e.g., `/desktop-view.png`).
 
-```
-.
-├── src
-│   ├── app/
-│   │   ├── globals.css     # Global styles and Tailwind directives
-│   │   ├── layout.tsx      # Root layout for the application
-│   │   └── page.tsx        # The main homepage
-│   │
-│   └── components/
-│       ├── About.tsx       # About Dr. Blake section
-│       ├── AreasOfFocus.tsx# Services/specialities section
-│       ├── ContactForm.tsx # Contact form component
-│       ├── FAQs.tsx        # FAQ accordion component
-│       ├── Footer.tsx      # Site-wide footer
-│       ├── Hero.tsx        # Hero video section
-│       └── Navbar.tsx      # Site-wide navigation bar
-│
-├── public/                 # Static assets (images, fonts, etc.)
-│
-├── eslint.config.mjs       # ESLint configuration
-├── next.config.ts          # Next.js configuration
-├── package.json            # Project dependencies and scripts
-├── postcss.config.mjs      # PostCSS configuration for Tailwind CSS
-└── tsconfig.json           # TypeScript configuration
-```
+<br>
 
-## Getting Started
+## 🚀 Website Sections
+
+The website is structured into several key sections, each built as a modular React component for maintainability and clarity.
+
+-   **Hero Section (`Hero.tsx`)**
+    -   An immersive full-screen section with a background video.
+    -   Features a bold, clear headline and a prominent "Schedule a Consultation" call-to-action button.
+
+-   **About Dr. Blake (`About.tsx`)**
+    -   A professional introduction to Dr. Blake, featuring her portrait and a detailed biography.
+    -   Uses a two-column layout to balance text and imagery effectively.
+
+-   **Areas of Focus (`AreasOfFocus.tsx`)**
+    -   Highlights the primary services and specializations offered.
+    -   Presented in a clean, three-column grid with circular images and descriptive text for each area.
+
+-   **Frequently Asked Questions (`FAQs.tsx`)**
+    -   An interactive accordion component that allows users to easily find answers to common questions.
+    -   Built with client-side state management for a smooth user experience.
+
+-   **Contact Form (`ContactForm.tsx`)**
+    -   A secure and user-friendly form for prospective clients to get in touch.
+    -   Includes client-side validation and displays a confirmation modal upon successful submission.
+
+-   **Navbar & Footer (`Navbar.tsx`, `Footer.tsx`)**
+    -   A responsive navigation bar with a logo and mobile-friendly menu.
+    -   A comprehensive footer containing contact details, quick links, and social media icons.
+
+<br>
+
+## 🛠️ Tech Stack
+
+This project is built with a modern, high-performance technology stack:
+
+| Category        | Technology                                                                                                                         |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Framework**   | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)                             |
+| **UI Library**  | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)                                   |
+| **Styling**     | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)              |
+| **Language**    | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)                    |
+| **Linting**     | ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)                                 |
+| **Deployment**  | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)                                 |
+
+<br>
+
+## ⚙️ Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
--   Node.js (v20 or later recommended)
--   A package manager like `npm`, `yarn`, `pnpm`, or `bun`.
+-   Node.js (v20.x or later)
+-   npm, yarn, pnpm, or bun
 
 ### Installation & Setup
 
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/your-username/dr-serena-blake.git
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
     cd dr-serena-blake
     ```
-3.  **Install dependencies:**
+
+2.  **Install dependencies:**
     ```bash
     npm install
     # or
@@ -79,29 +94,25 @@ To get a local copy up and running, follow these simple steps.
     # or
     pnpm install
     ```
-4.  **Run the development server:**
-    This project is configured to use Next.js's Turbopack for faster development.
+
+3.  **Run the development server:**
+    This project is configured to use Next.js's Turbopack for a faster development experience.
     ```bash
     npm run dev
     ```
-5.  **Open the application:**
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the homepage by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+4.  **Open in your browser:**
+    Navigate to [http://localhost:3000](http://localhost:3000) to see the website.
 
 ### Available Scripts
 
--   `npm run dev`: Starts the development server with Turbopack.
--   `npm run build`: Builds the application for production usage.
--   `npm run start`: Starts a production server (requires a build first).
--   `npm run lint`: Runs the ESLint linter to check for code quality issues.
+-   `npm run dev`: Starts the development server.
+-   `npm run build`: Creates a production-ready build of the application.
+-   `npm run start`: Starts the production server (requires a build first).
+-   `npm run lint`: Lints the code to ensure consistency and quality.
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployed Link
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## License
-
-This project can be considered under the MIT License. See the `LICENSE` file for more details. (Note: You may want to add a `LICENSE` file if one is needed).
+Visit the website here https://grow-mt.themyth.site/
